@@ -38,8 +38,7 @@ public class ReportingServiceManager extends BroadcastReceiver {
 	public void onReceive(Context context, Intent intent) {
 		if (intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
 			Log.d(Const.TAG, "[onReceive] BOOT_COMPLETED");
-			
-			Utilities.checkIconVisibility(context);
+
 			if (Utilities.persistentOptOut(context)) {
 				return;
 			}

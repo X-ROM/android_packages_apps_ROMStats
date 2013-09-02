@@ -33,9 +33,6 @@
             android:key="pref_anonymous_opt_out_persist"
             android:title="@string/disable_reporting_persistent" />
 
-        <!-- Preference
-            android:key="pref_uninstall_romstats"
-            android:title="@string/pref_uninstall" /-->
     </PreferenceCategory>
     
     <PreferenceCategory android:title="@string/pref_stats" android:key="pref_stats">
@@ -55,9 +52,9 @@
         <Preference
             android:key="pref_reporting_interval"
             android:title="@string/reporting_interval" />
-        <Preference
+        <!--Preference
             android:key="pref_app_signature"
-            android:title="@string/app_signature" />
+            android:title="@string/app_signature" /-->
     </PreferenceCategory>
     
     <PreferenceCategory android:title="@string/pref_info" >
@@ -65,16 +62,10 @@
             android:key="pref_about"
             android:summary="@string/pref_info_about"
             android:title="@string/app_name" />
-        <!--
-             Preference
-            android:key="pref_changelog"
-            android:summary="@string/pref_info_changelog_desc"
-            android:title="@string/pref_info_changelog" /
-        -->
-        <Preference
+        <!--Preference
             android:key="pref_website"
             android:summary="@string/pref_info_website_url"
-            android:title="@string/pref_info_website" />
+            android:title="@string/pref_info_website" /-->
     </PreferenceCategory>
 
 </PreferenceScreen>

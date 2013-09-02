@@ -135,22 +135,7 @@ public class Utilities {
 			return null;
 		}
 	}
-	
-	public static String getSigningCert(Context context) {
-		PackageInfo packageInfo = null;
 
-		try {
-			packageInfo = context.getPackageManager().getPackageInfo(context.getPackageName(), PackageManager.GET_SIGNATURES);
-		} catch (NameNotFoundException e) {
-			e.printStackTrace();
-		}
-		Signature[] signatures = packageInfo.signatures;
-		
-		String signingCertHash = digest(signatures[0].toCharsString());
-		
-		return signingCertHash;
-	}
-	
 	public static String getGaTracking() {
 		String gaTracking = SystemProperties.get("ro.romstats.ga");
 		
@@ -160,7 +145,7 @@ public class Utilities {
 		
 		return gaTracking;
 	}
-	
+
 	/**
 	 * Gets the Ask First value
 	 * 0: RomStats will behave like CMStats, starts reporting automatically after the tframe (default)
@@ -217,22 +202,4 @@ public class Utilities {
 		
 		return false;
 	}
-
-	public static void checkIconVisibility(Context context) {
-		File sdCard = Environment.getExternalStorageDirectory();
-		File dir = new File (sdCard.getAbsolutePath() + "/.ROMStats");
-		File cookieFile = new File(dir, "hide_icon");
-		
-		PackageManager p = context.getPackageManager();
-		ComponentName componentToDisable = new ComponentName("android.romstats", "android.romstats.AnonymousStats");
-		if (cookieFile.exists()) {
-			// exist, hide icon
-			p.setComponentEnabledSetting(componentToDisable, PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
-		} else {
-			// does not exist, show icon
-			p.setComponentEnabledSetting(componentToDisable, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
-		}
-	}
-	
-	
 }

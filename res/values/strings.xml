@@ -15,7 +15,9 @@
 -->
 
 <resources>
-    <string name="app_name">ROM Stats</string>
+    <string name="app_name">Carbon Stats</string>
+
+    <string name="version_v">v</string>
 
     <!-- Main -->
     <string name="main_title">Anonymous Usage Data</string>
@@ -30,7 +32,7 @@
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">ROM Statistics</string>
-    <string name="anonymous_statistics_summary">Help make this ROM better by opting into anonymous statistics reporting</string>
+    <string name="anonymous_statistics_summary">Help make CarbonROM better by opting into anonymous statistics reporting</string>
     <string name="anonymous_statistics_warning_title">About</string>
     <string name="anonymous_statistics_warning">Opting into ROM Statistics will allow non-personal data to be submitted to the
         developers of the ROM to track unique installations across devices. The information submitted includes an unique identifier,
@@ -55,10 +57,6 @@
     <string name="next_report_on">Next report</string>
     <string name="app_signature">App signature</string>
     
-    <string name="pref_hideicon">Hide icon from launcher</string>
-    <string name="pref_hideicon_desc">Application launcher icon will be hidden from your App Drawer</string>
-    
-    <string name="pref_uninstall">Uninstall</string>
     <string name="btn_yes">Yes</string>
     <string name="btn_no">No</string>
     
