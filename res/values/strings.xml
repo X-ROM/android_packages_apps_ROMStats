@@ -15,7 +15,7 @@
 -->
 
 <resources>
-    <string name="app_name">Carbon Stats</string>
+    <string name="app_name">C-RoM Stats</string>
 
     <string name="version_v">v</string>
 
@@ -32,7 +32,7 @@
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">ROM Statistics</string>
-    <string name="anonymous_statistics_summary">Help make CarbonROM better by opting into anonymous statistics reporting</string>
+    <string name="anonymous_statistics_summary">Help make C-RoM better by opting into anonymous statistics reporting</string>
     <string name="anonymous_statistics_warning_title">About</string>
     <string name="anonymous_statistics_warning">Opting into ROM Statistics will allow non-personal data to be submitted to the
         developers of the ROM to track unique installations across devices. The information submitted includes an unique identifier,
